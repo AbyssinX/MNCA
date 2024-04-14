@@ -1,1 +1,1 @@
-# MNCA
+# Multiple Neighbourhood Cellular Automata
