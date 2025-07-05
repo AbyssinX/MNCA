@@ -1,25 +1,48 @@
 import pygame
-import sys
+import time
 import numpy as np
 
 # Parameters
-CELLS_SIZE = 3
+CELLS_SIZE = 2
 GRID_WIDTH = 300
-GRID_HEIGHT = 220
+GRID_HEIGHT = 200
 FPS = 10
 
 # Game of Life rules
 
-NEIGHBOURHOOD = [(-1,  1), (0, 1), (1, 1),
-                 (-1,  0)        , (1, 0),
-                 (-1, -1), (0,-1), (1,-1)]
+NEIGHBOURHOOD_CLASSIC = [(-1,  1), (0, 1), (1, 1),
+                         (-1,  0)        , (1, 0),
+                         (-1, -1), (0,-1), (1,-1)]
+
+NEIGHBOURHOOD_BUG = [(-5,  5), (-4, 5), (-3, 5), (-2, 5), (-1, 5), (0, 5), (1, 5), (2, 5), (3, 5), (4, 5), (5, 5),
+                     (-5,  4), (-4, 4), (-3, 4), (-2, 4), (-1, 4), (0, 4), (1, 4), (2, 4), (3, 4), (4, 4), (5, 4),
+                     (-5,  3), (-4, 3), (-3, 3), (-2, 3), (-1, 3), (0, 3), (1, 3), (2, 3), (3, 3), (4, 3), (5, 3),
+                     (-5,  2), (-4, 2), (-3, 2), (-2, 2), (-1, 2), (0, 2), (1, 2), (2, 2), (3, 2), (4, 2), (5, 2),
+                     (-5,  1), (-4, 1), (-3, 1), (-2, 1), (-1, 1), (0, 1), (1, 1), (2, 1), (3, 1), (4, 1), (5, 1),
+                     (-5,  0), (-4, 0), (-3, 0), (-2, 0), (-1, 0)        , (1, 0), (2, 0), (3, 0), (4, 0), (5, 0),
+                     (-5,  -1), (-4, -1), (-3, -1), (-2, -1), (-1, -1), (0, -1), (1, -1), (2, -1), (3, -1), (4, -1), (5, -1),
+                     (-5,  -2), (-4, -2), (-3, -2), (-2, -2), (-1, -2), (0, -2), (1, -2), (2, -2), (3, -2), (4, -2), (5, -2),
+                     (-5,  -3), (-4, -3), (-3, -3), (-2, -3), (-1, -3), (0, -3), (1, -3), (2, -3), (3, -3), (4, -3), (5, -3),
+                     (-5,  -4), (-4, -4), (-3, -4), (-2, -4), (-1, -4), (0, -4), (1, -4), (2, -4), (3, -4), (4, -4), (5, -4),
+                     (-5,  -5), (-4, -5), (-3, -5), (-2, -5), (-1, -5), (0, -5), (1, -5), (2, -5), (3, -5), (4, -5), (5, -5)]  
+
+RADIUS = 5
+
+
+def circularBoundary(radius):
+    coordinates = [(x,y) for x in range(-radius,radius+1) for y in range(-radius,radius+1) if (x**2 + y**2 <= radius**2) == True]
+    return coordinates
+
+
+ 
+
 
 
 def nextGeneration(live_cells):
     neighbours = {}
 
     for (x, y) in live_cells:
-        for dx, dy in NEIGHBOURHOOD:
+        for dx, dy in circularBoundary(8):
             neighbour = (x + dx, y + dy) 
             try:
                 neighbours[neighbour] += 1 
@@ -27,8 +50,16 @@ def nextGeneration(live_cells):
                 neighbours[neighbour] = 1
     
     new_live_cells = set()
-    for cell, count in neighbours.items():
-        if count == 3 or (count == 2 and cell in live_cells):
+    # for cell, count in neighbours.items():  # Classic
+    #     if count == 3 or (count == 2 and cell in live_cells):
+    #         new_live_cells.add(cell)
+
+    # for cell, count in neighbours.items():  # Bug
+    #     if count >= 17 and count <= 22: 
+    #         new_live_cells.add(cell)
+
+    for cell, count in neighbours.items():  # Circular
+        if count >= 2 and count <= 5: 
             new_live_cells.add(cell)
 
     return new_live_cells
@@ -56,7 +87,7 @@ def main():
 
 
 
-    cells = np.random.choice([0, 1], size=(GRID_WIDTH-1, GRID_HEIGHT-1), p=[.9, .1])
+    cells = np.random.choice([0, 1], size=(GRID_WIDTH-1, GRID_HEIGHT-1), p=[.8, .2])
 
     live_cells = set()
     for row,col in np.ndindex(cells.shape):
@@ -78,6 +109,7 @@ def main():
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
                     running = not running
+                    
                 elif event.key == pygame.K_ESCAPE:
                     pygame.quit()
                     return
@@ -89,6 +121,12 @@ def main():
                     offset_x += 0.5
                 elif event.key == pygame.K_LEFT:
                     offset_x -= 0.5
+            if pygame.mouse.get_pressed()[0]:
+                pos = pygame.mouse.get_pos()
+                print(pos)
+                live_cells.add((pos[1] // 15, pos[0] // 15))         # doesn't work properly
+                draw_grid(screen,live_cells, offset_x, offset_y)
+            
                          
 
 
@@ -97,6 +135,7 @@ def main():
         
         draw_grid(screen, live_cells, offset_x, offset_y)
         clock.tick(FPS)
+        time.sleep(0.0001)
 
 
 if __name__ == "__main__":
