@@ -10,6 +10,7 @@ The Game of Life consists of simple rules:
 
 In its majority those rules produce states that eventually die out or are locked in a forever repeating simple cycle (e.g. the 4 adjecent cells forming a square will forever remain in that form). However, sertain cofigurations produce behaviour that creates complex structures. For example, Gosper glider gun, the first gun to be found. 
 ![By Lucas Vieira - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=101736](Gospers_glider_gun.gif)
+
 A glider gun produces infinite number of gliders. It has complex and periodic behaviour. 
 
 The emergence that occurs within the Game of Life gave rise to an idea of trying to work not just with cellular automaton, but with Multiple Neighbourhood Cellular Automata. By changing the boundary conditions and adjusting rules of the Game, incredible patterns can be found. 
