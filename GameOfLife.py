@@ -248,7 +248,7 @@ def main():
     pygame.init()
     screen = pygame.display.set_mode((GRID_WIDTH * CELLS_SIZE, GRID_HEIGHT * CELLS_SIZE))
     pygame.display.set_caption("Game Of Life")
-    icon = pygame.image.load("image.png")
+    icon = pygame.image.load("VisualFiles/image.png")
     pygame.display.set_icon(icon)
     
     clock = pygame.time.Clock()
