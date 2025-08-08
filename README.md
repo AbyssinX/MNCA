@@ -23,6 +23,6 @@ https://github.com/user-attachments/assets/b7076b64-e60f-422a-a2e4-d79cbf4621d6
 
 I created the pattern by considering the following two sets of neighbourhoods. 
 
-![](VisualFiles/Neighbourghood1.JPEG | width = 100) ![](VisualFiles/Neighbourghood2.JPEG | width = 100) 
+![](VisualFiles/Neighbourghood1.JPEG | width=100) ![](VisualFiles/Neighbourghood2.JPEG | width=100) 
 
 However, the same sets of neighbourhoods can give rise to a completely different behaviour.
