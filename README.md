@@ -23,6 +23,6 @@ https://github.com/user-attachments/assets/b7076b64-e60f-422a-a2e4-d79cbf4621d6
 
 I created the pattern by considering the following two sets of neighbourhoods.  
 
-<img src="VisualFiles/Neighbourghood1.JPEG" alt="drawing" width="100"/> <img src="VisualFiles/Neighbourghood2.JPEG" alt="drawing" width="50"/>
+<img src="VisualFiles/Neighbourghood1.JPEG" alt="drawing" width="250"/> <img src="VisualFiles/Neighbourghood2.JPEG" alt="drawing" width="200"/>
 
 However, the same sets of neighbourhoods can give rise to a completely different behaviour.
