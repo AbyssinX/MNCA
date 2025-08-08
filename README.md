@@ -31,4 +31,6 @@ https://github.com/user-attachments/assets/7e44371d-12e7-49cb-9dea-c7a2003651ee
 
 To achieve the "worm" pattern shown, I needed to adjust a single value in the rules for the "cells" pattern just by 1. MNCA are incredibly sensitive to the initial conditions, which is also a reason for the increadible complexity they produce. 
 
+While playing with different rules for the neighbourhood condition above, I came across the following behaviour that reminds me of hydrothermal vents. 
+
 https://github.com/user-attachments/assets/08350f6e-9dbb-4a02-9b89-40318c07c957
