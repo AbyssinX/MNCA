@@ -8,7 +8,7 @@ The Game of Life consists of simple rules:
 * Any live cell with more than 3 live neighbours dies, as if by overpopulation.
 * Any dead cell with exactly 3 live neighbours becomes a live cell, as if by reproduction.
 
-In its majority, those rules produce states that eventually die out or are locked in a forever repeating simple cycle (e.g. the 4 adjecent cells forming a square will forever remain in that form). However, sertain cofigurations produce behaviour that creates complex structures. For example, Gosper glider gun, the first gun to be found. 
+In its majority, those rules produce states that eventually die out or are locked in a forever repeating simple cycle (e.g. the 4 adjecent cells forming a square will forever remain in that form). However, certain cofigurations produce behaviour that creates complex structures. For example, Gosper glider gun, the first gun to be found. 
 
 ![Gosper Glider Gun](VisualFiles/Glider_gun.gif)
 
