@@ -17,9 +17,7 @@ A glider gun produces infinite number of gliders. It has complex and periodic be
 The emergence that occurs within the Game of Life gave rise to an idea of trying to work not just with cellular automaton, but with Multiple Neighbourhood Cellular Automata. By changing the boundary conditions and adjusting rules of the Game, incredible patterns can be found. 
 The following emergent behaviour simulates a life form, a cellular organism:
 
-<video controls src="VisualFiles/Cells6.mp4" title="The emergence of a cellular life-form"></video>
-
-https://github.com/user-attachments/assets/b7076b64-e60f-422a-a2e4-d79cbf4621d6
+https://github.com/user-attachments/assets/7c8d8bb6-9299-47b4-a937-d47ed5a19bc1
 
 I created the pattern by considering the following two sets of neighbourhoods.  
 
