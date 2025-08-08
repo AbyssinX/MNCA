@@ -25,5 +25,10 @@ I created the pattern by considering the following two sets of neighbourhoods.
 
 <img src="VisualFiles/Neighbourghood1.JPEG" alt="drawing" width="450" />  <img src="VisualFiles/Neighbourghood2.JPEG" alt="drawing" width="350"/>
 
-
 However, the same sets of neighbourhoods can give rise to a completely different behaviour.
+
+https://github.com/user-attachments/assets/08350f6e-9dbb-4a02-9b89-40318c07c957
+
+
+
+
