@@ -29,6 +29,6 @@ The same sets of neighbourhoods can give rise to a different behaviour under dif
 
 
 
-To achieve the second pattern shown, I needed to adjust a single value in the rules for the first pattern just by 1. MNCA are incredibly sensitive to the initial conditions. 
+To achieve the "worm" pattern shown, I needed to adjust a single value in the rules for the "cells" pattern just by 1. MNCA are incredibly sensitive to the initial conditions, which is also a reason for the increadible complexity they produce. 
 
 https://github.com/user-attachments/assets/08350f6e-9dbb-4a02-9b89-40318c07c957
