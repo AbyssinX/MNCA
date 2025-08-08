@@ -47,7 +47,7 @@ circularClick = circularBoundary(5)
 circular1 = circularBoundary(7, 4)
 circular2 = circularBoundary(4)
 # print(circular1)
-print(circular2)
+# print(circular2)
 
 
 ### Othet boundaries
