@@ -27,7 +27,7 @@ I created the pattern by considering the following two sets of neighbourhoods.
 
 The same sets of neighbourhoods can give rise to a different behaviour under different rules.
 
-
+https://github.com/user-attachments/assets/7e44371d-12e7-49cb-9dea-c7a2003651ee
 
 To achieve the second pattern shown, I needed to adjust a single value in the rules for the first pattern just by 1. MNCA are incredibly sensitive to the initial conditions. 
 
