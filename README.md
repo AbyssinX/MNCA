@@ -10,7 +10,7 @@ The Game of Life consists of simple rules:
 
 In its majority those rules produce states that eventually die out or are locked in a forever repeating simple cycle (e.g. the 4 adjecent cells forming a square will forever remain in that form). However, sertain cofigurations produce behaviour that creates complex structures. For example, Gosper glider gun, the first gun to be found. 
 
-<!-- ![Gosper Glider Gun](VisualFiles/Glider_gun.gif)  -->
+![Gosper Glider Gun](VisualFiles/Glider_gun.gif)
 
 A glider gun produces infinite number of gliders. It has complex and periodic behaviour. 
 
@@ -18,6 +18,8 @@ The emergence that occurs within the Game of Life gave rise to an idea of trying
 The following emergent behaviour simulates a life form, a cellular organism:
 
 <video controls src="VisualFiles/Cells6.mp4" title="The emergence of a cellular life-form"></video>
+
+https://github.com/user-attachments/assets/b7076b64-e60f-422a-a2e4-d79cbf4621d6
 
 
 I created the pattern by considering two sets of neighbourhoods. 
