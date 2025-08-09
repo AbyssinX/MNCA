@@ -17,7 +17,7 @@ A glider gun produces infinite number of gliders. It has complex and periodic be
 The emergence that occurs within the Game of Life gave rise to an idea of trying to work not just with cellular automaton, but with Multiple Neighbourhood Cellular Automata. By changing the boundary conditions and adjusting rules of the Game, incredible patterns can be found. 
 The following emergent behaviour simulates a life form, a cellular organism:
 
-https://github.com/user-attachments/assets/7c8d8bb6-9299-47b4-a937-d47ed5a19bc1
+https://github.com/user-attachments/assets/bdf527d3-6ce5-40a9-8c78-6006c60cdb2f
 
 I created the pattern by considering the following two sets of neighbourhoods.  
 
@@ -25,10 +25,10 @@ I created the pattern by considering the following two sets of neighbourhoods.
 
 The same sets of neighbourhoods can give rise to a different behaviour under different rules.
 
-https://github.com/user-attachments/assets/7e44371d-12e7-49cb-9dea-c7a2003651ee
+https://github.com/user-attachments/assets/2ba8cfd2-7749-4dfd-a932-01505e8732b7
 
 To achieve the "worm" pattern shown, I needed to adjust a single value in the rules for the "cells" pattern just by 1. MNCA are incredibly sensitive to the initial conditions, which is also a reason for the increadible complexity they produce. 
 
 While playing with different rules for the neighbourhood condition above, I came across the following behaviour that reminds me of fluids exiting hydrothermal vents. 
 
-https://github.com/user-attachments/assets/08350f6e-9dbb-4a02-9b89-40318c07c957
+https://github.com/user-attachments/assets/28d7bf5c-8eae-4913-8c6d-31444455ac2a
