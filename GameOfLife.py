@@ -114,10 +114,10 @@ def nextStage(cells):
             #     next_stage[y,x] = 1
 
 
-            if count1 >= 19  and count1 <= 21:           # cells_like 3  !!!
-                next_stage[y,x] = 1
-            elif count2 >= 23  and count2 <= 40:
-                next_stage[y,x] = 1
+            # if count1 >= 19  and count1 <= 21:           # cells_like 3  !!!
+            #     next_stage[y,x] = 1
+            # elif count2 >= 23  and count2 <= 40:
+            #     next_stage[y,x] = 1
 
             # if count1 >= 15  and count1 <= 17:           # cells_like 4
             #     next_stage[y,x] = 1
@@ -135,10 +135,10 @@ def nextStage(cells):
             #     next_stage[y,x] = 1
 
 
-            # if count1 >= 25 and count1 <= 28:           
-            #     next_stage[y,x] = 1
-            # elif count2 >= 17 and count2 <= 21:
-            #     next_stage[y,x] = 1
+            if count1 >= 25 and count1 <= 28:           
+                next_stage[y,x] = 1
+            elif count2 >= 17 and count2 <= 21:
+                next_stage[y,x] = 1
             
             
             # if count1 >= 37 and count1 <= 50:    # ?????
@@ -305,8 +305,8 @@ def main():
             cells = nextStage(cells)
         
         draw_grid(screen, cells, offset_x, offset_y)
-        clock.tick(FPS)
-        time.sleep(0.001)
+        clock.tick(150)
+        # time.sleep(0.001)
     
 
 
